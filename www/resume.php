@@ -1,6 +1,6 @@
 <?php
 /**
- * simplesamlphp-modules/toznyauth/www/resume.php
+ * toznyauth/www/resume.php
  *
  * @package default
  */

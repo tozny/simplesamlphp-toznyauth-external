@@ -1,12 +1,12 @@
 <?php
 /**
- * simplesamlphp-modules/toznyauth/www/authpage.php
+ * toznyauth/www/authpage.php
  *
  * @package default
  */
 
 
-require_once __DIR__ . "/../constants.php";
+require_once __DIR__ . '/../constants.php';
 
 /**
  * Login page for TOZNY API.

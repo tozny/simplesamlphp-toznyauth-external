@@ -1,25 +1,7 @@
 <?php
 
 /**
- * Example external authentication source.
- *
- * This class is an example authentication source which is designed to
- * hook into an external authentication system.
- *
- * To adapt this to your own web site, you should:
- * 1. Create your own module directory.
- * 2. Add a file "default-enable" to that directory.
- * 3. Copy this file and modules/exampleauth/www/resume.php to their corresponding
- *    location in the new module.
- * 4. Replace all occurrences of "exampleauth" in this file and in resume.php with the name of your module.
- * 5. Adapt the getUser()-function, the authenticate()-function and the logout()-function to your site.
- * 6. Add an entry in config/authsources.php referencing your module. E.g.:
- *        'myauth' => array(
- *            '<mymodule>:External',
- *        ),
- *
- * @package simpleSAMLphp
- * @version $Id$
+ * Tozny as an external authentication source.
  */
 class sspmod_toznyauth_Auth_Source_External extends SimpleSAML_Auth_Source {
 
@@ -52,9 +34,7 @@ class sspmod_toznyauth_Auth_Source_External extends SimpleSAML_Auth_Source {
 	private function getUser() {
 
 		/*
-		 * In this example we assume that the attributes are
-		 * stored in the users PHP session, but this could be replaced
-		 * with anything.
+		 * We assume that the attributes stored in the users PHP session.
 		 */
 
 		if (!session_id()) {
@@ -91,7 +71,7 @@ class sspmod_toznyauth_Auth_Source_External extends SimpleSAML_Auth_Source {
 
 
 	/**
-	 * Log in using an external authentication helper.
+	 * Log in using Tozny.
 	 *
 	 * @param array &$state  Information about the current authentication.
 	 */
@@ -180,7 +160,7 @@ class sspmod_toznyauth_Auth_Source_External extends SimpleSAML_Auth_Source {
 	 * Resume authentication process.
 	 *
 	 * This function resumes the authentication process after the user has
-	 * entered his or her credentials.
+	 * entered her credentials.
 	 *
 	 * @param array &$state  The authentication state.
 	 */
@@ -227,7 +207,7 @@ class sspmod_toznyauth_Auth_Source_External extends SimpleSAML_Auth_Source {
 		/*
 		 * OK, now we know that our current state is sane. Time to actually log the user in.
 		 *
-		 * First we check that the user is acutally logged in, and didn't simply skip the login page.
+		 * First we check that the user is actually logged in, and didn't simply skip the login page.
 		 */
 		$attributes = $source->getUser();
 		if ($attributes === NULL) {

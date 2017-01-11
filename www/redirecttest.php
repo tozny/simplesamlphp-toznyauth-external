@@ -1,6 +1,6 @@
 <?php
 /**
- * simplesamlphp-modules/toznyauth/www/redirecttest.php
+ * toznyauth/www/redirecttest.php
  *
  * @package default
  */
@@ -23,5 +23,3 @@ $state = SimpleSAML_Auth_State::loadState($id, 'toznyauth:redirectfilter-test');
 $state['Attributes']['RedirectTest2'] = array('OK');
 
 SimpleSAML_Auth_ProcessingChain::resumeProcessing($state);
-
-?>

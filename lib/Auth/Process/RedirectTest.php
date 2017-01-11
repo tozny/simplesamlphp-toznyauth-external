@@ -6,7 +6,6 @@
  */
 class sspmod_toznyauth_Auth_Process_RedirectTest extends SimpleSAML_Auth_ProcessingFilter {
 
-
 	/**
 	 * Initialize processing of the redirect test.
 	 *
@@ -26,5 +25,3 @@ class sspmod_toznyauth_Auth_Process_RedirectTest extends SimpleSAML_Auth_Process
 	}
 
 }
-
-?>
