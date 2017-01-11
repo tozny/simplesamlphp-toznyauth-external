@@ -1,0 +1,15 @@
+{
+    "name": "tozny/simplesamlphp-toznyauth-external",
+    "description": "SimpleSAMLphp module for integrating with Tozny authentication.",
+    "type": "library",
+    "require": {
+        "tozny/sdk-php": "^1.4"
+    },
+    "license": "LGPL-2.1",
+    "authors": [
+        {
+            "name": "Eric Mann",
+            "email": "eric@tozny.com"
+        }
+    ]
+}
