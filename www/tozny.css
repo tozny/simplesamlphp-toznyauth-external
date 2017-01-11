@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* ___Config_________________________________________________________________  */
+
+:root {
+	var-red: #E25537;
+	var-aqua: #5CC3B7;
+	var-aqua-dark: #41B0A0
+}
+
+
+/* ___General_______________________________________________________________________*/
+.clear{clear:both}
+.hidden{display:none}
+.right{float:right}
+.left{float:left}
+.red{color:red}
+.green{color:green}
+.small{font-size:10px}
+.big{font-size:16px}
+.bigger{font-size:18px}
+.submit{padding:10px 20px;min-width:150px;text-align:center;border:1px solid #41B0A0;background:#5CC3B7;color:#fff;font-size:14px;font-weight:normal}
+	.submit:hover{cursor:pointer}
+/* ___Structure_____________________________________________________________________*/
+body{background:#3DB7B1}
+#wrap{background:none;border:none;margin:0px auto;}
+#header{background:none}
+	#header #logo{float:left}
+	#header #page_header{float:right;color:#fff;padding-top:40px}
+#content{margin:0; padding:20px; border-radius:4px; -moz-border-radius:4px;}
+	#portalmenu{}
+
+.toz-qr-box {margin:0 auto; text-align: center;}
+
+/* ___Authenticate Page_______________________________________________________*/
+
+/*#tiqr-authenticate a{text-decoration:none;border:none;}*/
+/*#tiqr-authenticate #wrap{margin:0px auto;max-width:300px;background:none;}*/
+/*#tiqr-authenticate #header{padding:0px;margin:60px auto 0px auto;text-align:center}*/
+	/*#tiqr-authenticate #logo{float:none;margin:0px auto;}*/
+	/*#tiqr-authenticate #logo img{display:inline;border:none;}*/
+	/*#tiqr-authenticate #page_header{display:none}*/
+	/*#tiqr-authenticate #languagebar{display:none}*/
+/*#tiqr-authenticate #content{background:none;text-align:center;padding:10px; }*/
+	/*#tiqr-authenticate #content p{}*/
+	/*#tiqr-authenticate #content h2{}*/
+	/*#tiqr-authenticate #content img{margin:0px;padding:0px;display:inline;border-radius:4px; -moz-border-radius:4px;}*/
+/*#tiqr-authenticate #footer{display:none}*/
+/*#auth-explain{position:fixed;bottom:0;right:10%;width:400px;}*/
+	/*#auth-explain-tab{width:150px;border-top-right-radius:10px;border-top-left-radius:10px;background:#fff;padding:5px 10px;float:right}*/
+	/*#auth-explain-content{background:#fff;clear:both;padding:25px;text-align:left;border-top-left-radius:10px;}*/
