@@ -19,9 +19,9 @@ class sspmod_toznyauth_Auth_Source_External extends SimpleSAML_Auth_Source {
 		parent::__construct($info, $config);
 
 		/* Do any other configuration we need here. */
-        $this->realm_key_id = $config['realm_key_id'];
+        $this->realm_key_id     = $config['realm_key_id'];
         $this->realm_secret_key = $config['realm_secret_key'];
-        $this->api_url = $config['api_url'];
+        $this->api_url          = $config['api_url'];
     }
 
 
@@ -100,10 +100,10 @@ class sspmod_toznyauth_Auth_Source_External extends SimpleSAML_Auth_Source {
 		 * First we add the identifier of this authentication source
 		 * to the state array, so that we know where to resume.
 		 */
-		$state['toznyauth:AuthID'] = $this->authId;
-		$state['toznyauth:realm_key_id'] = $this->realm_key_id;
+		$state['toznyauth:AuthID']           = $this->authId;
+		$state['toznyauth:realm_key_id']     = $this->realm_key_id;
 		$state['toznyauth:realm_secret_key'] = $this->realm_secret_key;
-        $state['toznyauth:api_url'] = $this->api_url;
+        $state['toznyauth:api_url']          = $this->api_url;
 
 
 		/*
@@ -134,8 +134,7 @@ class sspmod_toznyauth_Auth_Source_External extends SimpleSAML_Auth_Source {
 		 * Get the URL of the authentication page.
 		 *
 		 * Here we use the getModuleURL function again, since the authentication page
-		 * is also part of this module, but in a real example, this would likely be
-		 * the absolute URL of the login page for the site.
+		 * is also part of this module.
 		 */
 		$authPage = SimpleSAML_Module::getModuleURL('toznyauth/authpage.php');
 
@@ -249,15 +248,7 @@ class sspmod_toznyauth_Auth_Source_External extends SimpleSAML_Auth_Source {
 			session_start();
 		}
 
-		/*
-		 * In this example we simply remove the 'uid' from the session.
-		 */
 		unset($_SESSION['uid']);
-
-		/*
-		 * If we need to do a redirect to a different page, we could do this
-		 * here, but in this example we don't need to do this.
-		 */
 	}
 
 }
