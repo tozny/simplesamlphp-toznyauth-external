@@ -42,3 +42,8 @@ Open your SimpleSAMLphp's `authsources.php` configuration file in your favorite 
 You can call the authentication source whatever you want - "somesite" is just for demonstration purposes. The `realm_key_id` and `realm_secret_key` fields must be populated with the information you gathered about your Realm from the Tozny Administration Portal.
 
 Now, configure your relying parties as usual, pointing at the new authentication source when needed.
+
+Credits
+----
+
+This module is derived from the "exampleauth" modules [provided by SimpleSAMLphp itself](https://simplesamlphp.org/docs/1.5/simplesamlphp-idp).
